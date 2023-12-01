@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="POM_With_TestNG_Base_UtilityClass_FailedTCSS.SwagLabsLoginTest">
+      <class name="TestNG_Keywords.Ex_8_dependsOnMethods">
         <methods>
-          <include name="loginToApp"/>
-          <include name="openBrowser"/>
-          <include name="logoutFromApp"/>
-          <include name="verifyTitle"/>
-          <include name="closeBrowser"/>
+          <include name="logOut"/>
+          <include name="logIn"/>
         </methods>
-      </class> <!-- POM_With_TestNG_Base_UtilityClass_FailedTCSS.SwagLabsLoginTest -->
+      </class> <!-- TestNG_Keywords.Ex_8_dependsOnMethods -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

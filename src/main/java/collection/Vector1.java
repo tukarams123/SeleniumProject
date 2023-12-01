@@ -44,6 +44,7 @@ public class Vector1 {
 		v2.clear();
 		System.out.println(v2);
 
+
 	}
 
 }

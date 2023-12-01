@@ -43,7 +43,6 @@ public class SwagLabsLoginTest extends Base_Class {
 
 	@Test
 	public void verifyTitle() throws EncryptedDocumentException, IOException {
-		TCID = 101;
 		String actTitle = home.getSwagLabsHomePageTitle();
 		String expTitle = Utility_Class.getTestData(0, 1);
 		Assert.assertEquals(actTitle, expTitle, "Failed: Both results are different");
@@ -51,6 +50,8 @@ public class SwagLabsLoginTest extends Base_Class {
 
 	@AfterMethod
 	public void logoutFromApp(ITestResult result) throws InterruptedException, IOException {
+		TCID = 101;
+
 		if (result.getStatus() == ITestResult.FAILURE) {
 			Utility_Class.captureSS(d, TCID);
 
